@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+header{
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding-left: 40px;
+    font-size: 20px;
+    color:rgb(119, 108, 48);
+    opacity: 0.8;
+    text-shadow: slategrey 3px 3px 3px;
+    position: fixed;
+    z-index: 100;
+}
+
+#logo{
+    width: 15%;
+    margin-top: -2%;
+    margin-right: 2%;
+}
+
+.pc-only{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.list{
+    text-decoration: none;
+    text-shadow: 1px 1px 1px darkblue;
+    border-right: white 1px solid;
+    text-align: center;
+    padding-right: 10%;
+}
