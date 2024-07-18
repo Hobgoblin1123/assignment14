@@ -10,7 +10,6 @@ body{
     background-color: #000;
     display: flex;
     align-items: center;
-    display: none;
 }
 
 #lazer {
@@ -42,12 +41,55 @@ body{
     display: flex;
     position: fixed;
     z-index: 8999;
-    background-color: #ffffff;
+    background-color: #dbdada;
     text-align: center;
     animation: none;
 }
 
 #s-logo{
     margin: auto;
-    scale: 200%;
+    animation: none;
+    opacity: 0;
+}
+
+#meteor{
+    width: 100px;
+    height: auto;
+    position: fixed;
+    z-index: 8899;
+    animation: none;
+    opacity: 0;
+}
+
+@keyframes scale-change{
+    0%{
+        scale: 0%;
+        opacity: 1;
+    }
+
+    50%{
+        scale: 10%;
+    }
+
+    70%{
+        scale: 195%;
+    }
+
+    100%{
+        scale: 200%;
+        opacity: 1;
+    }
+}
+
+@keyframes ryusei{
+    0%{
+        left: -100%;
+        top: -100%;
+        opacity: 1;
+    }
+    100%{
+        left: 120%;
+        top: 100%;
+        opacity: 1;
+    }
 }
