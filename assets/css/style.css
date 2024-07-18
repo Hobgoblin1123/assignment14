@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    background-image: url("../images/checked.jpg");
 }
 
 header{
@@ -33,8 +34,6 @@ header{
     object-fit: contain;
 }
 
-
-
 .list{
     text-decoration: none;
     text-shadow: 1px 1px 1px darkblue;
@@ -42,4 +41,8 @@ header{
     text-align: center;
     white-space: nowrap;
     padding-right: 50%;
+}
+
+a:hover{
+    color: rgba(0, 0, 139, 0.685);
 }
