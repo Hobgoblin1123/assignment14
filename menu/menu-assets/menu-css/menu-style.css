@@ -3,3 +3,64 @@ body{
     font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
+.toHome{
+    font-size: larger;
+}
+
+#top-images{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+#top-images>img{
+    width: 100%;
+    height: fit-content;
+}
+
+#top-images img:first-child{
+    z-index: 0;
+    position: absolute;
+    opacity: 1;
+    animation: slide 18s infinite;
+}
+
+#top-images img:nth-child(2){
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    animation: slide 18s infinite;
+    animation-delay: 6s;
+}
+
+#top-images img:last-child{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    opacity: 0;
+    animation: slide 18s infinite;
+    animation-delay: 12s;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+    }
+
+    5%{
+        opacity: 1;
+    }
+
+    33.3%{
+        opacity: 1;
+    }
+
+    38.3%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
