@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    background-image: url("a-background.jpg");
+    background-size: cover;
+}
+
+h1{
+    width: 40%;
+    color: white;
+    background: linear-gradient(rgb(93, 219, 93),rgb(10, 110, 10));
+    border-radius: 0 10px 10px 0;
+    opacity: 0.9;
+    padding-left: 2%;
+}
+
+h2{
+    width: 30%;
+    color: white;
+    background: linear-gradient(rgb(54, 182, 54),rgb(6, 86, 6));
+    border-radius: 0 10px 10px 0;
+    opacity: 0.9;
+    padding-left: 2%;
+}
+
+p{
+    font-size: 20px;
+    width: 90%;
+    margin-left: 2%;
+}
