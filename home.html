@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/shutter.css">
+    <link rel="icon" href="assets/images/mainIcon.png">
+    <!-- <link rel="stylesheet" href="assets/css/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="assets/css/appear.css">
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/judgeAccess.js"></script>
     <script src="assets/js/shutter.js"></script>
-    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/appear.js"></script>
+    <!-- <script src="assets/js/jquery-ui.min.js"></script> -->
+    <script src="assets/js/slider.js"></script>
     <title>UCTS | ホーム</title>
 </head>
 <body>
@@ -46,11 +51,24 @@
 <div id="important">
     <img class="fade-in fade-in-left" src="assets/images/important.jpg" alt="あらすじ">
 </div>
-<!-- news -->
 
+<!-- news -->
+<img id="newsTitle" class="fade-in fade-in-left" src="assets/images/news.png" alt="インフォメーション">
+<div id="slider-wrapper">
+  <button id="prevBtn" class="btn">PREV</button>
+  <div id="slider-area">
+    <ul>
+      <li><a href="menu/article/taiho.html" data-lightbox="images"><img src="menu/article/samnail/bakuha.jpg" /></a></li>
+      <li><a href="menu/article/sukumizu.html" data-lightbox="images"><img src="menu/article/samnail/bakuha.jpg" /></a></li>
+      <li><a href="menu/article/bakuha.html" data-lightbox="images"><img src="menu/article/samnail/bakuha.jpg" /></a></li>
+    </ul>
+  </div>
+  <button id="nextBtn" class="btn">NEXT</button>
+</div>
 <!-- ツイッター -->
 
-<div id="twitter"  class="fade-in fade-in-left">
+<div id="twitter">
+  <img id = "twitterTitle" class="fade-in fade-in-left" src="assets/images/X.png" alt="ツイッター">
   <a class="twitter-timeline" data-theme="dark" data-width="50%" data-height="800px" data-chrome="transparent"
       data-chrome="noborders" frameborder="0"
       href="https://twitter.com/gtt7Uw8CpF66088">Tweets by SaiSyouKou</a>
@@ -59,10 +77,53 @@
 
 <!-- 校長ご挨拶 -->
 
-<div id="story">
-    <div id="context">
-      <h2><br>埼玉商業学院工業大学？どこだよそれFランじゃｎ！！ww<br></h2>  
-    </div>
+<div id="greet">
+    <img src="assets/images/greet.png" alt="" id="greetTitle" class="fade-in fade-in-left">
+    <p>皆さん、こんにちは！埼玉商業学院工業大学の学長、イマシカです。<br><br>
+
+      　当大学は、ユニークで革新的な教育を提供することを目指し、学生一人ひとりの個性と才能を最大限に引き出す環境を整えています。私たちのモットーは「楽しみながら学ぶ」であり、学問の追求と共に笑いと創造性を大切にしています。<br>
+      
+      私たちのキャンパスでは、ポップコーン爆破事件のような予期せぬ出来事も起こりますが、それもまた一つの学びの機会です。学生たちは、こうしたユニークな経験を通じて、柔軟な思考と問題解決能力を身につけています。<br><br>
+      
+      　埼玉商業学院工業大学には、「グレービジネス学部」や「野球サイエンス学部」など、他では見られないユニークな学部が揃っています。これらの学部では、実践的な知識とスキルを学び、未来のリーダーとしての道を切り開くことができます。<br>
+
+      　特に注目すべきは、当大学の看板学部である「カスタネット学部」です。この学部では、カスタネットの演奏技術だけでなく、その歴史や文化、さらにはカスタネットを使った新しいパフォーマンスの開発まで、幅広い分野を学ぶことができます。カスタネット学部の学生たちは、毎年開催される「全国カスタネット選手権」で数々の賞を受賞しており、その実力は折り紙付きです。<br><br>
+      
+      　私たちは、学生の皆さんが自分の可能性を最大限に発揮できるよう、全力でサポートします。新しい挑戦を恐れず、楽しみながら学び、成長していきましょう。<br>
+      
+      皆さんと一緒に、楽しく充実した大学生活を送ることを楽しみにしています！<br><br>
+      
+      イマシカ学長</p>
 </div>
+
+<footer>
+  <div class="footerInner">
+    <ul id=map>
+      <li>
+      <li>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7840718146304!2d139.54107877578662!3d35.65769127259491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f0141c587615%3A0xe510b22e7670f20b!2z6Zu75rCX6YCa5L-h5aSn5a2m!5e0!3m2!1sja!2sjp!4v1721496324971!5m2!1sja!2sjp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </li>
+      </li>
+    </ul>
+  </div>
+  <ul class="links-main-pages">
+    <li>
+      <a href="https://x.com/gtt7Uw8CpF66088" target="_blank"><img src="assets/images/logo-X.png"
+          alt="UCTS公式X" id="icon"></a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/@%E3%82%A4%E3%83%9E%E3%82%B7%E3%82%AB" target="_blank"><img src="assets/images/logo-youtube.png" alt="学長youtubeチャンネル"></a>
+    </li>
+  </ul>
+  <ul class="links-sub-pages">
+    <li><a href="menu/faculties.html">学部紹介</a></li>
+    <li><a href="menu/activities.html">課外活動</a></li>
+    <li><a href="menu/teachers.html">教員紹介</a></li>
+    <li><a href="menu/exam.html">入試情報</a></li>
+    <li><a href="menu/news.html">お知らせ</a></li>
+    <li><a href="menu/access.html">アクセス</a></li>
+  </ul>
+  <small>&copy;埼玉商業学院工業大学</small>
+</footer>
 </body>
 </html>

@@ -1,9 +1,157 @@
 body{
     margin: 0;
     font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+    background: url("../../../assets/images/background.jpg");
+    background-size: cover;
 }
 
 .toHome{
-    font-size: larger;
+    font-size: 25px;
 }
 
+h1{
+    width: 40%;
+    color: white;
+    background: linear-gradient(rgb(93, 219, 93),rgb(10, 110, 10));
+    border-radius: 0 10px 10px 0;
+    opacity: 0.9;
+    padding-left: 2%;
+}
+
+strong{
+    width: 30%;
+    color: white;
+    background: linear-gradient(rgb(54, 182, 54),rgb(6, 86, 6));
+    border-radius: 0 10px 10px 0;
+    opacity: 0.9;
+    padding-left: 2%;
+    padding-right: 50px;
+}
+
+
+/* -----------------------お知らせ------------------------------ */
+#newsTitle{
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.newsList{
+    width: 100%;
+    display: block;
+    margin-top: 100px;
+    align-items: center;
+    flex: 1;
+}
+
+.newsList a img:hover{
+    transform: scale(120%);
+}
+
+.newsList > a img{
+    width: 25%;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+
+/* -------------------------課外活動--------------------- */
+#activityList{
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+#activityList>a{
+    margin-right: 100px;
+}
+
+#activityList img:hover{
+    transform: scale(115%);
+}
+
+.activity-childList{
+    margin-left: 3%;
+}
+
+/* --------------------------アクセス------------------- */
+#accessGuide{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 4%;
+}
+/* -------------------------フッター---------------- */
+
+footer{
+    background-image:url("../../../assets/images/footer2.png");
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #map iframe{
+    margin-top: 50px;
+    border-radius: 10%;
+  }
+  
+  #icon{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+  }
+  
+  footer img{
+    width: 50px;
+    height: fit-content;
+    border-radius: 10px;
+  }
+
+  footer img:hover{
+    transform: scale(110%);
+  }
+  
+  footer ul{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links-social{
+    margin: 20px 40px 40px;
+  }
+  
+  #map,
+  .links-main-pages,
+  .links-sub-pages{
+    margin: 40px;
+  }
+  
+  .links-social li{
+    padding: 0 10px;
+  }
+  
+  .links-main-pages li,
+  .links-sub-pages li{
+    padding: 0 30px;
+    border-right: solid 1px #fff;
+    font-size: 14px;
+  }
+  
+  .links-main-pages li:last-child,
+  .links-sub-pages li:last-child{
+    border-right: 0;
+  }
+  
+  .links-main-pages a,
+  .links-sub-pages a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  small {
+    color: #fff;
+  }

@@ -2,7 +2,7 @@ body{
     margin: 0;
     font-family: "游明朝", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "ＭＳ Ｐ明朝", "MS PMincho", serif;
     background-image: url("../images/background.jpg");
-    background-size: cover;
+    background-size: contain;
 }
 
 header{
@@ -11,7 +11,7 @@ header{
     width: 100%;
     height: 10%;
     font-size: 20px;    
-    opacity: 0.7;
+    opacity: 0.8;
     position: fixed;
     z-index: 100;
 }
@@ -115,6 +115,7 @@ a:hover{
     height: auto;
     text-align: center;
     margin-top: 10%;
+    margin-bottom: 20%;
 }
 
 #important>img{
@@ -124,8 +125,16 @@ a:hover{
 #twitter{
     width: 100%;
     display: block;
-    margin-top: 20%;
     margin-top: 10%;
+}
+
+#twitterTitle{
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 50px;
 }
 
 .twitter-timeline {
@@ -134,7 +143,189 @@ a:hover{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background: green;
+    background: gray;
     opacity: 0.8;
     border-radius: 30px;
+}
+
+
+
+/*----------------------- お知らせ ---------------------*/
+#newsTitle{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+#slider-area ul,li{
+    list-style: none;
+}
+
+#slider-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("image/sightseeing.jpg");
+    height: 500px;
+}
+  
+#prevBtn{
+    color: blue;
+    background-color: rgb(189, 243, 225);
+    width: 120px;
+    height: 50px;
+    line-height:50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: white;
+}
+
+#slider-area{
+    width: 800px;
+    height: 450px;
+    overflow: hidden;
+    margin: 0 5px;
+    padding-top: 100px;
+}
+  
+#slider-area ul{
+    display: flex;
+    margin: 0 5px;
+}
+  
+#slider-area li{
+    margin: 10px 5px;
+}
+  
+#slider-area img{
+    width: 400px;
+    height: fit-content;
+    border-radius: 30px;
+}
+
+#slider-area img:hover{
+    transform: scale(110%);
+}
+  
+#nextBtn{
+    color: blue;
+    background-color: rgb(189, 243, 225);
+    width: 120px;
+    height: 50px;
+    line-height:50px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    border-color: white;
+}
+
+button{
+    width: 60px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+
+/* --------------------学長挨拶-------------------- */
+#greet{
+    width: 100%;
+    display: block;
+    margin-top: 20%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#greetTitle{
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+#greet>p{
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    line-height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(255, 255, 238);
+    opacity: 0.8;
+    border-radius: 30px;
+}
+
+/* ----------------------フッター---------------- */
+
+footer{
+    background-image:url("../images/footer2.png");
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #map iframe{
+    margin-top: 50px;
+    border-radius: 10%;
+  }
+  
+  #icon{
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+  }
+  
+  footer img{
+    width: 50px;
+    height: fit-content;
+    border-radius: 10px;
+  }
+
+  footer img:hover{
+    transform: scale(110%);
+  }
+  
+  footer ul{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links-social{
+    margin: 20px 40px 40px;
+  }
+  
+  #map,
+  .links-main-pages,
+  .links-sub-pages{
+    margin: 40px;
+  }
+  
+  .links-social li{
+    padding: 0 10px;
+  }
+  
+  .links-main-pages li,
+  .links-sub-pages li{
+    padding: 0 30px;
+    border-right: solid 1px #fff;
+    font-size: 14px;
+  }
+  
+  .links-main-pages li:last-child,
+  .links-sub-pages li:last-child{
+    border-right: 0;
+  }
+  
+  .links-main-pages a,
+  .links-sub-pages a{
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  small {
+    color: #fff;
   }
