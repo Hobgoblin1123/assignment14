@@ -40,9 +40,8 @@ strong{
 
 .newsList{
     width: 100%;
-    display: block;
+    text-align: center;
     margin-top: 100px;
-    align-items: center;
     flex: 1;
 }
 
@@ -62,6 +61,7 @@ strong{
 #activityList{
     width: 100%;
     margin-top: 10%;
+    margin-left: 50px;
     margin-bottom: 5%;
     text-align: center;
 }
