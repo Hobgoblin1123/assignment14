@@ -1,6 +1,6 @@
 jQuery(function(){
     $('#lazer').css('animation','lazer forwards 4.0s');
-    //lazerアニメーションが終わりそうなときにshutter2自体をフェードアウトさせる
+    //lazerアニメーションが終わりそうなときにshutter1自体をフェードアウトさせる
     setTimeout(function(){
       $('#shutter1').fadeOut(1000);
     },3000);
